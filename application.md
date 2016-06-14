@@ -36,6 +36,8 @@ Bioscience. [joseph.ryan@whitney.ufl.edu](mailto:joseph.ryan@whitney.ufl.edu)
 **Amount of support requested:** $50,568
 
 \pagebreak
+\clearpage
+\setcounter{page}{1}
 
 # Introduction
 
