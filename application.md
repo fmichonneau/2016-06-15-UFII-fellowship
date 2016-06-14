@@ -40,13 +40,13 @@ Bioscience. [joseph.ryan@whitney.ufl.edu](mailto:joseph.ryan@whitney.ufl.edu)
 
 <!-- start with marine but then talk about all organisms -->
 
-High-Throughput DNA sequencing technologies are poised to revolutionize how
-biodiversity is studied. The _en masse_ sequencing of all species found in a
-community replaces the time-consuming steps of isolating and recognizing each
-species found in an environmental sample. The challenge now rests on developing
-informatic tools that can identify the species from which these DNA sequences
-come from. The goal of the research described in this proposal is to develop new
-tools that facilitate the identification of these sequences.
+High-Throughput sequencing (HTS) is poised to revolutionize how biodiversity is
+studied. The parellel sequencing of all species found in a community replaces
+the time-consuming steps of isolating and recognizing each species found in an
+environmental sample, and even allows the characterization of communities whose
+members could not be identified based on morphology. The challenge now rests on
+developing informatic tools that can take advantage of publicly available data
+to match these DNA sequences to the organisms they are coming from.
 
 Estimates for the number of species found in the oceans vary by orders of
 magnitude. This uncertainty stems from the difficulty of sampling the diversity
@@ -61,10 +61,11 @@ diverse taxonomic groups, from all latitudes, covering both marine and
 terrestrial habitats. This dataset is the most comprehensive for which the same
 gene has been sequenced and is associated with curated taxonomic information. To
 take advantage of this data, metabarcoding targeting COI is emerging as the
-approach of choice to characterize marine communities. However, marine
-biodiversity is still poorly characterized, and many taxa have not yet been
-sequenced for COI. The challenge adressed by this research is to find the most
-likely taxon for a sequence given the species that have been sequenced for COI.
+approach of choice to characterize marine communities based on DNA. However,
+marine biodiversity is still poorly characterized, and many taxa have not yet
+been sequenced for COI. The challenge adressed by this research is to find the
+most likely taxon for a sequence given the species that have been sequenced for
+COI.
 
 <!-- if I include community phylogenetic give some background on it -->
 
@@ -85,7 +86,7 @@ database do not take advantage of the protein-coding nature of COI. Another
 approach with bacterial communities, metagenomics, seeks to match genomic DNA
 from environmental samples to sequenced genomes. This approach is still not
 applicable across diverse groups of animals given that genomes are larger than
-in bacteria, and many taxon do not have genomes available.
+in bacteria, and most taxa do not have genomes available.
 
 I propose to develop new informatic tools and open-source software to assign
 taxon names to protein-coding DNA sequences generated in metabarcoding
@@ -169,7 +170,8 @@ reproduction; how do predators target their preys; how does the phylogenetic -->
 
 Compare overlap in species composition between individuals being barcoded,
 species found in the plankton, and metabarcode of scrapings. Compare results
-between Line Islands and Bocas del Toro, Panama.
+between Line Islands and Bocas del Toro, Panama. Take advantage of the Moorea
+biocode.
 
 ### 2. Temporal dynamics of community relatedness in the plankton
 
@@ -183,7 +185,7 @@ To answer these questions, I will need to generate phylogenies representative of
 the communities. These phylogenies will be generated based on the output of the
 softwares developed in Goals 1 & 2.
 
-### Goal 1 -- an light-weight extensible Laboratory Information Management System for barcoding projects
+### Goal 1 -- a light-weight extensible Laboratory Information Management System for barcoding projects
 
 Data collected when assembling a barcoding library are heterogenous in
 nature. Need to keep track of specimen information, taxonomic information
@@ -308,6 +310,14 @@ campus. Grow community of users who collaborate on solving computing problems.
 \pagebreak
 
 # References
+
+<!-- First, the sequences get translated according to the candidate codon -->
+<!-- tables given the taxa targeted by the analysis. Codon tables that lead to stop -->
+<!-- codons are not retained. The protein sequence is then matched against a database -->
+<!-- of representative sequences for COI across of the tree of life. This steps -->
+<!-- allows the assignment of this unknown sequence to a phylum. If the inferred -->
+<!-- phylum is compatible with one of genetic codes inferred, the phylum and the -->
+<!-- genetic codes are retained. -->
 
 
 <!-- Slow process because sequences have to be queried over all of GenBank which is -->
