@@ -256,6 +256,18 @@ no exact match is found. I will develop this software in Python. This software
 will be relatively easy to implement as it is mostly a wrapper around other
 pre-existing well-tested software.
 
+To test the accuracy of this approach, I will use sequences from known species
+and use the software developed to attempt to identify them. To simulate the
+effect of trying to identify a species not represented in the reference
+database, I will ignore all the hits for this particular species and use the
+next best matches. I will repeat this operation at increasingly higher taxonmic
+levels (removing the genus, the family, the class, the order) to determine how
+the software behaves when the sequence to be classified is taxonomically further
+away from taxa available in the reference database. Because the results are
+likely dependent on how many representants of the group are included in the
+reference database, the test dataset will be assembled to include representative
+from diverse taxa.
+
 Another area of improvement for software aimed at analyzing metabarcoding data
 is during the assessment of the quality of the sequences. It is common to
 translate DNA sequences into their protein sequence, and remove sequences that
@@ -272,6 +284,7 @@ will account for the presence of these alternative genetic codes.
 
 
 ### Goal 3 -- obtaining community phylogenies from metabarcoding data
+
 
 
 
