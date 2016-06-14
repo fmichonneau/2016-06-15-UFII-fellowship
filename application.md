@@ -104,7 +104,7 @@ Over the course of this project, I will work on three goals:
   community phylogenies based on the sequences obtained from metabarcoding.
 
 
-\fbox{
+![Comparison of workflows for barcoding and metabarcoding. With barcoding (A), tissues from specimens are used to isolate their DNA (gray strand). The barcoding gene (colored dots) is amplified by PCR, and an unique sequence for each specimen is obtained using Sanger sequencing. The sequences obtained can be used to build a reference library, where sequences are associated with a voucher specimen. With metabarcoding (B), DNA from an environmental sample (e.g., sea water containing planktonic larvae) is isolated. This solution contains DNA from multiple species, and the barcoding gene is amplified for the species. An High-Throughput Sequencing (HTS) platform (e.g., Illumina) is used to sequence all the amplified fragments of DNA (the amplicons). These sequences are analysed bioinformatically: the sequences are matched against a reference database to identify the species contained in the environmental sample.](figures/drawing.pdf)
 
 Box 1 -- Definitions and drawings
 
@@ -127,7 +127,7 @@ expressed in the environment?), and the diversity of the community (how many
 species are in the community? what are the species found in the community?).
 
 Metabarcoding: .....
-}
+
 
 
 # Research questions
@@ -238,12 +238,7 @@ codes inferred, the phylum and the genetic codes are retained.
 We propose to modify the approach used by SAP [@Munch2008] to include a step
 where the sequences to match are initially matched
 
-Current methods for assigning taxon labels to query sequences based on database
-sequences rely on (1) sequence similarity search, (2) sequence composition and
-features methods, (3) phylogenetic methods.
-
-Because the COI gene encodes for a protein, the translation of its DNA sequence
-
+### Goal 3 -- obtain
 
 
 Insist on important need for such tools in marine surveys.
