@@ -327,6 +327,24 @@ the "Research Questions" section.
 
 # Intellectual merit
 
+Software for managing barcoding data
+
+Metabarcoding is transforming how biodiversity is characterized, but the tools
+currently available are inadequate and do not take advantage of the all the
+scientific potential from the data these projects generate. By providing
+software specifically designed to analyze metabarcoding data, the proposed
+research will improve our understanding of biodiversity, and the results can be
+used to address long-standing questions in ecology pertaining to natural
+history, community assembly, and species interactions.
+
+By focusing on marine communities, this project will have to deal with diverse
+taxonomic groups, some of which have limited information available in public
+databases. These constraints will ensure that the software I will develop will
+be robust to other systems focusing on a narrower taxonomic group (e.g., soil
+arthropods, freshwater vertebrates) or in other group that rely on protein
+coding genes for barcoding (e.g., plants).
+
+
 
 # Timeline
 
