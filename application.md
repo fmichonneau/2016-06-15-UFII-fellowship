@@ -106,28 +106,41 @@ Over the course of this project, I will work on three goals:
 
 ![Comparison of workflows for barcoding and metabarcoding. With barcoding (A), tissues from specimens are used to isolate their DNA (gray strand). The barcoding gene (colored dots) is amplified by PCR, and an unique sequence for each specimen is obtained using Sanger sequencing. The sequences obtained can be used to build a reference library, where sequences are associated with a voucher specimen. With metabarcoding (B), DNA from an environmental sample (e.g., sea water containing planktonic larvae) is isolated. This solution contains DNA from multiple species, and the barcoding gene is amplified for the species. An High-Throughput Sequencing (HTS) platform (e.g., Illumina) is used to sequence all the amplified fragments of DNA (the amplicons). These sequences are analysed bioinformatically: the sequences are matched against a reference database to identify the species contained in the environmental sample.](figures/drawing.pdf)
 
-Box 1 -- Definitions and drawings
 
-Barcoding: .... In the early 2000s, large-scale biodiversity projects have been
-developed to coordinate and standardize information collected during
-biodiversity. Notably, a portion of the cytochrome oxidase I (COI, a
-mitochondrial gene) has emerged as a universal marker to document genetic
-diversity in animals. For most taxonomic group, COI has low intra-specific but
-high inter-specific variation allowing species delineation and identification.
-A public database has been developed to store these DNA sequences alongside with
-voucher information (in which natural history museum is the specimen from which
-the DNA comes from held?), photography of the live specimens, and data quality
-control on the sequence data. Currently, this database holds almost 5 million
+--------------------------------------------------------------------------------
+**Box 1**
+
+**Barcoding and COI** A portion of the cytochrome oxidase I (COI, a
+mitochondrial gene) has emerged as a universal genetic marker to document
+genetic diversity in animals. For most taxonomic group, COI has low
+intra-specific but high inter-specific variation allowing species delineation
+and identification.  A public database (BOLD, the Barcode Of Life Datasytem) has
+been developed to store these DNA sequences alongside with voucher information
+(in which natural history museum is the specimen from which the DNA comes from
+held?), photography of specimens, and quality control on the sequence
+data. Currently, this publicly available database holds almost 5 million
 sequences from specimens collected worldwide, and from a large diversity of
 taxonomic groups.
 
-Metagenomics: .... Metagenomics is well suited for microbial communities and
-allows to assess both the functional aspect of the community what are the genes
-expressed in the environment?), and the diversity of the community (how many
-species are in the community? what are the species found in the community?).
+One of the strengths of DNA barcoding is that it allows the identification of
+animals from parts and from all stages of the life cycles. It becomes possible
+to identify species found in fish guts to infer their diet, or to associate
+larval forms to the adults (which butterfly is this caterpillar going to
+metamorphose into? or what is the adult stage of this larva found in the
+plankton?)
 
-Metabarcoding: .....
+Among closely related species, COI sequences mostly vary at the third codon
+position. Because of the redundance of the genetic code, mutations on the third
+codon affect less often the protein sequence than mutations at the other two
+codons. Among more distantly related taxa, this excess of mutations on the third
+codon may lead to convergent mutations. This leads algorithms based on sequence
+similarity to assign sequences to the wrong taxa if no exact match is found.
+However, these distantly related taxa will also include mutations on the other
+codons that will lead to differences in their protein sequences. Because the
+protein sequence will evolve slower than the nucleotide sequence, it will be
+more accurate to infer the higher taxonomy from the sequence.
 
+--------------------------------------------------------------------------------
 
 
 # Research questions
