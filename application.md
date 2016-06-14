@@ -255,9 +255,7 @@ SAP. Instead of looking for homolog sequences based only on the nucleotide
 sequences, I will also include homologs based on their respective protein
 sequences. This approach will increase the likelihood of finding matches in the
 reference database, and will allow the assignment to a higher-level taxon when
-no exact match is found. I will develop this software in Python. This software
-will be relatively easy to implement as it is mostly a wrapper around other
-pre-existing well-tested software.
+no exact match is found. I will develop this software in Python. <!-- because... -->
 
 To test the accuracy of this approach, I will use sequences from known species
 and use the software developed to attempt to identify them. To simulate the
