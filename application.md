@@ -45,7 +45,7 @@ biodiversity is studied. The _en masse_ sequencing of all species found in a
 community replaces the time-consuming steps of isolating and recognizing each
 species found in an environmental sample. The challenge now rests on developing
 informatic tools that can identify the species from which these DNA sequences
-come. The goal of the research described in this proposal is to develop new
+come from. The goal of the research described in this proposal is to develop new
 tools that facilitate the identification of these sequences.
 
 Estimates for the number of species found in the oceans vary by orders of
@@ -94,7 +94,7 @@ datasets, and on metabarcoding datasets generated from marine communities. This
 research is interdisciplinary and integrates biodiversity informatics,
 evolutionary biology, ecology, and statistics.
 
-Specifically, over the course of this project, I will work on three goals:
+Over the course of this project, I will work on three goals:
 
 - **Goal 1:** develop a web-based tool to manage the heterogeneous but linked
   data generated in biodiversity surveys.
@@ -103,146 +103,128 @@ Specifically, over the course of this project, I will work on three goals:
 - **Goal 3:** combine sequence data and taxonomic information to generate
   community phylogenies based on the sequences obtained from metabarcoding.
 
----------------------------------------------------------------------------
-Box 1 -- Definitions
 
-Barcoding: ....
+\fbox{
 
-Metagenomics: ....
+Box 1 -- Definitions and drawings
+
+Barcoding: .... In the early 2000s, large-scale biodiversity projects have been
+developed to coordinate and standardize information collected during
+biodiversity. Notably, a portion of the cytochrome oxidase I (COI, a
+mitochondrial gene) has emerged as a universal marker to document genetic
+diversity in animals. For most taxonomic group, COI has low intra-specific but
+high inter-specific variation allowing species delineation and identification.
+A public database has been developed to store these DNA sequences alongside with
+voucher information (in which natural history museum is the specimen from which
+the DNA comes from held?), photography of the live specimens, and data quality
+control on the sequence data. Currently, this database holds almost 5 million
+sequences from specimens collected worldwide, and from a large diversity of
+taxonomic groups.
+
+Metagenomics: .... Metagenomics is well suited for microbial communities and
+allows to assess both the functional aspect of the community what are the genes
+expressed in the environment?), and the diversity of the community (how many
+species are in the community? what are the species found in the community?).
 
 Metabarcoding: .....
-
----------------------------------------------------------------------------
+}
 
 
 # Research questions
 
-
-
-
-Metagenomics is well suited for
-microbial communities and allows to assess both the functional aspect of the
-community what are the genes expressed in the environment?), and the diversity
-of the community (how many species are in the community? what are the species
-found in the community?). When the goal is to identify species found in a given
-environment, metabarcoding is often better suited for animal communities, as
-genomes are larger, and generally not as well characterized as bacteria. In
-addition, for animals, the possibility of an exact match to an existing sequence
-in the COI database makes metabarcoding focused on COI appealing.
-
-
 Global and local threats (e.g., ocean acidification, increased temperatures,
 pollution, overfishing) require better characterization and monitoring of marine
-communities, so we can evaluate and understand their impacts.
-
-
-
-
-has emerged as a promising tool to characterize marine communities by sequencing
-_en masse_ all species occurring in the environment. These technologies make it
-possible to estimate the number of species occurring in the plankton, in the gut
-of fish (to infer their diet), or in marine sediments. Identifying species in
-such communities based on morphology is time consuming, and often imperfect, as
-identifications must be done on character-poor organisms (e.g., larvae in the
-plankton) or on fragments (e.g., a shrimp leg in a fish gut).
-
-
-
- Species description of marine
-organisms has typically been done on preserved specimens whose coloration has
-been washed off by preservatives used for fixation, and with little information
-about their live appearance or their habits. The incorporation of molecular data
-into taxonomy has unraveled high levels of unrecognized diversity with many
-cryptic species. Hence, species thought to be widespread appeared in the light
-of molecular data to form mosaics of species complexes. Under scrutiny, these
-newly recognized species differed in their coloration and habitat, corroborating
-the results from molecular data.
-
-In the early 2000s, large-scale biodiversity projects have been developed to
-coordinate and standardize information collected during biodiversity. Notably, a
-portion of the cytochrome oxidase I (COI, a mitochondrial gene) has emerged as a
-universal marker to document genetic diversity in animals. For most taxonomic
-group, COI has low intra-specific but high inter-specific variation allowing
-species delineation and identification.  A public database has been developed to
-store these DNA sequences alongside with voucher information (in which natural
-history museum is the specimen from which the DNA comes from held?), photography
-of the live specimens, and data quality control on the sequence data. Currently,
-this database holds almost 5 million sequences from specimens collected
-worldwide, and from a large diversity of taxonomic groups. In addition, GenBank
-holds <!-- need to talk about barcoding -->
-<!-- here -->
-
-DNA barcoding has changed how marine biodiversity is studied, with large,
-all-taxa inventories with vouchers stored in museums, images of the specimens,
-and sequence data from COI. Besides improving the documentation of the number of
-species, barcoding data has also helped unravel the complex life cycles of many
-organisms, connecting the larval stage to the adult, or been used to assign
-species to the animal parts found in the stomachs of fish to reconstruct their
-diet. Biodiversity science is undergoing another transformation with the advent
-of metabarcoding. Instead of sequencing individuals, metabarcoding takes
-advantage of the massive parellel sequencing that next generation sequencing
-platforms provide. Contrary to metagenomics, metabarcoding relies on amplicon
-sequencing where the DNA from an environmental sample is extracted before the
-genetic marker of interest is amplified and sequenced.
-
+communities, so we can evaluate and understand their impact on biodiversity and
+on how communities are assembled. Metabarcoding makes it possible to estimate
+the number of species occurring in the plankton, in the gut of fish (to infer
+their diet), or in marine sediments. Identifying species in such communities
+based on morphology is time consuming, and often imperfect, as identifications
+must be done on character-poor organisms (e.g., larvae in the plankton) or on
+fragments (e.g., a shrimp leg in a fish gut).
 
 Metabarcoding is still a new technology whose limitations need to be better
-understood, but its potential to improve our understanding of biodiversity makes
-it appealing. Being able to identify the majority of species occurring in an
-environmental sample will for instance bring insights into dispersal potential,
-food webs, environmental impact and monitoring, and fine scale patterns of
-diversity. Currently, software used to analyze sequences generated during
-metabarcoding studies were originally developed to analyze bacterial
-communities, and are not well-suited for the specificity of the sequences
-generated by metabarcoding on animal communities, especially when using COI.
+defined, but its potential to help us understand not only how many species are
+found in a given community, but also identity the species will imporove our
+understanding on how these communities are assembled, and in turn gain insights
+into basic information on the natural history of taxa for which no data
+currently exist. <!-- give examples: are closely related taxa reproduce at the -->
+<!-- same time of the year; what is the effect of the lunar cycle/seasons on the
+reproduction; how do predators target their preys; how does the phylogenetic -->
+<!-- composition of a community changes along environmental gradients --->
+
+### 1. Comparison of metabarcoding from benthic and planktonic communities in contrasting environments
+
+Compare overlap in species composition between individuals being barcoded,
+species found in the plankton, and metabarcode of scrapings. Compare results
+between Line Islands and Bocas del Toro, Panama.
+
+### 2. Temporal dynamics of community relatedness in the plankton
+
+Compare how the taxonomic and phylogenetic composition of the planktonic
+communities changes through the year.
+
+
+# Approach and methods
+
+To answer these questions, I will need to generate phylogenies representative of
+the communities. These phylogenies will be generated based on the output of the
+softwares developed in Goals 1 & 2.
+
+### Goal 1 -- an light-weight extensible Laboratory Information Management System for barcoding projects
+
+Data collected when assembling a barcoding library are heterogenous in
+nature. Need to keep track of specimen information, taxonomic information
+associated with the specimen, molecular laboratory work, sequence data, live
+photography. BOLD is an online platform, useful to upload data before
+publication and to submit data to genbank but researchers need something more
+lightweight that they can use to manage, view, and prepare their data before
+publishing it/uploading it to BOLD.
+
+There is currently no open-source LIMS designed for barcoding.
+
+Developed as an R package (the API), and with a web-application in Shiny from
+the front-end. Because most researchers use some R, they will be able to
+contribute, extend it, and modify it for their own needs. The same API will be
+used to generate the data on the front-end, and for researchers to work with the
+data they can use for their research. It is also easy to deploy. Currently,
+already available as a Docker image. Data storred in a SQLite database and
+simple file system. Easy to backup and manage. Proof of concept of the front-end
+avaialble at http://104.131.113.146/flpk-shiny/.
+
+Data stored according to Darwin Core fields. Easy to export in format required
+by BOLD.
+
+### Goal 2 -- improving DNA sequence classification for COI metabarcodes
 
 Preliminary results where larvae of marine invertebrates are individually
 sequenced for COI (not environmental), less than 25% can be found in public
 databases. This number is expected to be even lower when sequences based on
 environmental sample. When using a SAP, a popular sequence classifier, routinely
 used in metabarcoding studies, only 33% could be assigned at the phylum level,
-and 18% at the species level. This low level of assignment stems from the lack
+and 18% at the species level. These low levels of assignment stem from the lack
 of significant homolog matches when comparing input DNA sequences and sequences
 available in public databases. In other words, sequences available in public
 databases are too divergent from the sample sequences (closely related taxa have
 not been sequenced).
 
-<!-- better job at explaining difference between metabarcoding itself, and COI -->
-<!-- based metabarcoding -->
-
-<!-- need to explain why protein sequences are less variable than DNA sequences -->
-
-We propose to modify the current workflow used in DNA sequence assignment to
-include a step where the protein sequences are being compared and matched. By
-being less variable than DNA sequences, using protein sequences will increase
-the probability of finding a match in public databases, and narrow down the
-taxonomic scope to which the DNA sequence can be matched.
+I propose to modify the current workflow used in DNA sequence assignment to
+include a step where the translated protein sequences are matched to the
+translated DNA sequences from the public databases. By being less variable than
+DNA sequences, protein sequences will increase the probability of finding a
+match in public databases, and narrow down the taxonomic scope to which the DNA
+sequence can be matched.
 
 During data quality control of sequences generated by a metabarcoding study, it
 is common to translate DNA sequences into their respective protein sequence, and
 remove sequences that include stop codons. Those could arise from sequencing
 error, or from the amplification of pseudo-genes. This quality control step is
-done using the standard genetic code to translate the DNA sequence into the
-protein sequence. However, across the diversity of animal phyla that can be
-found in metabarcoding studies, especially in the marine realm (e.g.,
-echinoderms, cnidarians, platyhelminthes), alternative genetic codes are
-encountered. These codes translate a codon interpreted as a stop codon in the
-standard code as a valid amino-acid. Thus, DNA sequences encoding for a
+done using the standard genetic code. However, across the diversity of animal
+phyla that can be found in metabarcoding studies, especially in the marine
+realm, alternative genetic codes are encountered (e.g., echinoderms, cnidarians,
+platyhelminthes). These codes translate a codon interpreted as a stop codon in
+the standard code as a valid amino-acid. Thus, DNA sequences encoding for a
 functional COI protein get discarded during this quality control stop, removing
 systematically some taxa from the analyses.
-
-## Approach
-
-### Dealing with alternative translation codes
-
-Typically, when analyzing data generated during a metabarcoding study, the DNA
-sequences get translated into their amino-acid equivalent and get checked for
-the presence of frame shifts and stop codons. This steps ensures that downstream
-analyses will use the functional copy of the COI sequence, and do not include
-spurious sequences. Typically, this steps is done assuming that the organisms
-from which these sequences come from use the standard genetic code. However,
-many invertebrate groups, including some of the most common marine organisms,
-use alternative genetic codes.
 
 We propose to develop a more robust approach that also accounts for the presence
 of these alternative genetic codes. First, the sequences get translated
@@ -253,13 +235,8 @@ across of the tree of life. This steps allows the assignment of this unknown
 sequence to a phylum. If the inferred phylum is compatible with one of genetic
 codes inferred, the phylum and the genetic codes are retained.
 
-
-### Using protein sequence homology
-
 We propose to modify the approach used by SAP [@Munch2008] to include a step
 where the sequences to match are initially matched
-
-
 
 Current methods for assigning taxon labels to query sequences based on database
 sequences rely on (1) sequence similarity search, (2) sequence composition and
@@ -267,22 +244,7 @@ features methods, (3) phylogenetic methods.
 
 Because the COI gene encodes for a protein, the translation of its DNA sequence
 
-Current software for analyzing results from DNA sequences collected in the
-environment have focused on estimating the number of species, and trying to
-match these sequences to sequences deposited in public databases.
 
-
-Paragraph on utility and accuracy of barcoding for animals. When dataset is
-looked under increased scrutinity, usually very low percentage of
-missassignment. Here givne the goal, it wouldn't be too big of a deal. Narrowing
-an unidentified sequence to a few species possibilities would be better than
-what is currently possible.
-
-Slow process because sequences have to be queried over all of GenBank which is
-huge and not necessarily relevant. Improve speed by providing a set of sequences
-from organisms most likely to occur in the sample, and for those that don't
-match, then do a BLAST search, possibly limiting to a phylum based on the
-sequence.
 
 Insist on important need for such tools in marine surveys.
 
@@ -302,11 +264,8 @@ Workflow:
 - classify to candidate phyla (or even lowest taxonomic group)
 - cluster/classify/BLAST search within this set of species
 
-# Datasets available to test the method
 
-# Personnel
-
-# Application to other disciplines
+# Intellectual merit
 
 # Risks and challenges
 
@@ -323,3 +282,41 @@ campus. Grow community of users who collaborate on solving computing problems.
 \pagebreak
 
 # References
+
+
+<!-- Slow process because sequences have to be queried over all of GenBank which is -->
+<!-- huge and not necessarily relevant. Improve speed by providing a set of sequences -->
+<!-- from organisms most likely to occur in the sample, and for those that don't -->
+<!-- match, then do a BLAST search, possibly limiting to a phylum based on the -->
+<!-- sequenc -->
+
+<!-- Paragraph on utility and accuracy of barcoding for animals. When dataset is -->
+<!-- looked under increased scrutinity, usually very low percentage of -->
+<!-- missassignment. Here givne the goal, it wouldn't be too big of a deal. Narrowing -->
+<!-- an unidentified sequence to a few species possibilities would be better than -->
+<!-- what is currently possible. -->
+
+
+<!--  Species description of marine -->
+<!-- organisms has typically been done on preserved specimens whose coloration has -->
+<!-- been washed off by preservatives used for fixation, and with little information -->
+<!-- about their live appearance or their habits. The incorporation of molecular data -->
+<!-- into taxonomy has unraveled high levels of unrecognized diversity with many -->
+<!-- cryptic species. Hence, species thought to be widespread appeared in the light -->
+<!-- of molecular data to form mosaics of species complexes. Under scrutiny, these -->
+<!-- newly recognized species differed in their coloration and habitat, corroborating -->
+<!-- the results from molecular data. -->
+
+
+<!-- DNA barcoding has changed how marine biodiversity is studied, with large, -->
+<!-- all-taxa inventories with vouchers stored in museums, images of the specimens, -->
+<!-- and sequence data from COI. Besides improving the documentation of the number of -->
+<!-- species, barcoding data has also helped unravel the complex life cycles of many -->
+<!-- organisms, connecting the larval stage to the adult, or been used to assign -->
+<!-- species to the animal parts found in the stomachs of fish to reconstruct their -->
+<!-- diet. Biodiversity science is undergoing another transformation with the advent -->
+<!-- of metabarcoding. Instead of sequencing individuals, metabarcoding takes -->
+<!-- advantage of the massive parellel sequencing that next generation sequencing -->
+<!-- platforms provide. Contrary to metagenomics, metabarcoding relies on amplicon -->
+<!-- sequencing where the DNA from an environmental sample is extracted before the -->
+<!-- genetic marker of interest is amplified and sequenced. -->
