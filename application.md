@@ -1,8 +1,9 @@
 ---
 author:
 title:
-geometry: margin=.75in
+geometry: margin=.5in
 papersize: letter
+indent: true
 documentclass: article
 mainfont: "Crimson Text"
 mainfontoptions: Ligatures=TeX,Scale=1.1
