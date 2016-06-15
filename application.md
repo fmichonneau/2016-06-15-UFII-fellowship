@@ -368,11 +368,14 @@ history, community assembly, and species interactions.
 
 By focusing on marine communities, this project will have to deal with diverse
 taxonomic groups, some of which have limited information available in public
-databases. These constraints will ensure that the software I will develop will
-be robust to other systems focusing on a narrower taxonomic group (e.g., soil
-arthropods, freshwater vertebrates) or in other group that rely on protein
-coding genes for barcoding (e.g., plants).
+databases. These constraints will make the software developed robust to other
+systems that focus on communities composed of more closely related taxonomic
+groups (e.g., soil arthropods, freshwater vertebrates) or on groups that rely on
+other protein coding genes for barcoding (e.g., plants).
 
+The intellectual environment the UF Informatics Institute provides by bringing
+together postdoctoral fellows from diverse brackgrounds will be exciting to
+work on solving complex scientific problems.
 
 
 # Broader Impacts
