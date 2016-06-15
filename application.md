@@ -32,6 +32,8 @@ Bioscience.
 * **Co-PI:** Joseph Ryan, Whitney Laboratory for Marine
 Bioscience. [joseph.ryan@whitney.ufl.edu](mailto:joseph.ryan@whitney.ufl.edu)
 
+* **Co-PI:** Douglas Soltis, Florida Museum of Natural History, Department of Biology, Genetics Institute. [dsoltis@ufl.edu](mailto:dsoltis@ufl.edu)
+
 
 ----
 
