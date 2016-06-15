@@ -45,89 +45,86 @@ Bioscience. [joseph.ryan@whitney.ufl.edu](mailto:joseph.ryan@whitney.ufl.edu)
 \clearpage
 \setcounter{page}{1}
 
-# Introduction
+### Introduction
 
 High-Throughput sequencing (HTS) is poised to revolutionize how biodiversity is
-studied. The parallel sequencing of all species found in a community replaces
-the time-consuming steps of isolating and recognizing each species found in an
-environmental sample, and even allows the characterization of communities whose
-members could not be identified based on morphology [@Kartzinel2015],
-[@Leray2015], [@Leray2015a]. The challenge now rests on developing computing
-tools that can take advantage of publicly available data to match these DNA
-sequences to the organisms they are coming from.
+studied. The parallel sequencing of all species found in a biological community
+replaces the time-consuming steps of isolating and recognizing each species
+found in an environmental sample, and even allows the characterization of
+communities whose members could not be identified based on morphology
+[@Kartzinel2015a], [@Leray2015], [@Leray2015a]. These approaches make it
+possible to estimate the number of species occurring in the plankton, in the gut
+of fish (to infer their diet), or in marine sediments. Identifying species in
+such communities based on morphology is time consuming, and often imperfect: the
+identifications must be done on character-poor organisms (e.g., larvae in the
+plankton) or on animal fragments (e.g., a shrimp leg in a fish gut). These
+sequencing technologies promise not only to estimate much more accurately the
+number of species found in communities, but also (1) to identify the species by
+comparing the DNA sequences to reference databases, and (2) to provide genetic
+data that can be used to infer the phylogenetic relationships among
+them. However, computing tools and software to deliver on these promises are
+lacking, and the proposed research will help close this gap.
 
-<!-- paragraph here about how using phylogenies is going to help understand -->
-<!-- community phylogenetics.. End with something like not only it's going to be -->
-<!-- an useful technology to characterize and discover biodiversity, but also to -->
-<!-- understand how communities are assembled, how their members interact, and -->
-<!-- how the environment affects that. -->
+The study of how communities are assembled, how their composition is affected by
+changes in the environment, or the answer to "How many species are there on
+Earth?", has been limited by the absence of a rapid, inexpensive, and accurate
+method to identify species. This is especially true for invertebrates that
+include species-rich groups with limited taxonomic expertise. Molecular data has
+transformed our understanding of marine biodiversity: how species are
+distributed in space [@Schroth2002], how they interact [@Leray2015a], how they
+are related to each others [@Dunn2008], and how to distinguish them
+[@Knowlton2000]. Since the early 2000's, DNA barcoding (see Figure 1 and Box 1)
+has been widely adopted to facilitate future identification, and uncover species
+complexes (e.g., [@Michonneau2015-impatiens]). Almost 5 million DNA barcodes are
+publicly available representing diverse taxonomic groups, from all latitudes,
+covering both marine and terrestrial habitats. This dataset is the most
+comprehensive for which the same gene has been sequenced, and is associated with
+curated taxonomic information. To take advantage of this data, metabarcoding
+(see Figure 1 and Box 1) targeting COI is emerging as the approach of choice to
+characterize marine communities based on DNA. However, marine biodiversity is
+still poorly characterized, and many taxa have not yet been sequenced for
+COI. One of the challenges addressed by this proposed research is to find the
+most likely taxon for a sequence given the species that have been sequenced.
 
-Estimates for the number of species found in the oceans vary by orders of
-magnitude [@Appeltans2012], [@Costello2013], [@Mora2011a]. This uncertainty
-stems from the difficulty of sampling the diversity of habitats hidden under the
-ocean's surface, and our relative poor taxonomic knowledge for most groups. The
-use of molecular data to study marine biodiversity has improved our
-understanding of how species are distributed in space [@Schroth2002], how they
-interact [@Leray2015a], how they are related to each others [@Dunn2008], and how
-to distinguish them [@Knowlton2000]. Since the early 2000's, DNA barcoding (see
-Figure 1 and Box 1) has been widely adopted by the community to facilitate
-future identification, and uncover species complexes (e.g.,
-[@Michonneau2015-impatiens]). Almost 5 million DNA barcodes are publicly
-available representing diverse taxonomic groups, from all latitudes, covering
-both marine and terrestrial habitats. This dataset is the most comprehensive for
-which the same gene has been sequenced and is associated with curated taxonomic
-information. To take advantage of this data, metabarcoding (see Figure 1 and Box
-1) targeting COI is emerging as the approach of choice to characterize marine
-communities based on DNA. However, marine biodiversity is still poorly
-characterized, and many taxa have not yet been sequenced for COI. The challenge
-addressed by this proposed research is to find the most likely taxon for a
-sequence given the species that have been sequenced for COI.
+The realization that the phylogeny of locally co-occurring species could inform
+on the environmental and biotic forces that determine which species occur in
+communities has revitalized the field of community ecology
+[@Webb2000],[@Webb2002]. However, a major limitation has been the difficulty of
+acquiring a phylogeny for an arbitrary set of species. By generating DNA
+sequences from the species ocurring in the community, HTS and metabarcoding in
+particular, are providing the data needed to infer the phylogenetic
+relationships among these species. Here I propose to develop software that allow
+researchers to build phylogenies for the species in their communities based on
+the sequences generated by metabarcoding.
 
-<!-- if including community phylogenetic give some background on it -->
+Because of the prospects offered by metabarcoding, assembling high quality
+reference databases of DNA barcodes is crucial. Additionally, to increase the
+likelihood that the DNA sequences generated in metabarcoding studies will have
+exact matches, some researchers build DNA barcode libraries in parallel to their
+metabarcoding efforts. Few tools (and none that are open-source) exist to keep
+the heterogeneous data generated during barcoding studies organized.
 
-<!-- need to talk on how much better it is to assemble local database of COI -->
-<!-- sequences to increase chances of matching -->
+I propose to develop new tools and open-source software to increase the
+scientific utility and value of the sequence data generated in metabarcoding
+studies. I will test the performance and accuracy of these tools on simulated
+datasets, and on metabarcoding datasets generated from marine communities. Over
+the course of this project, I will work on three goals: (1) develop a
+light-weight and expendable data management system for data generated in
+barcoding surveys; (2) improve the assignment of taxonomic information to DNA
+sequences generated during metabarcoding studies; (3) combine sequence data
+generated by metabarcoding studies and taxonomic information to generate
+community phylogenies.
 
-
-Current software used to assign taxon names to DNA sequences generated with HTS
-are ill-suited for animal communities. These software were originally designed
-to analyze sequences originating from microbial communities
-[@Bazinet2012]. Metabarcoding studies on bacteria typically target the genetic
-marker 16S. It is known to provide good resolution at low taxonomic level and is
-easy to amplify across a large diversity of species. Several databases of 16S
-sequences for bacteria have been assembled against which researchers can match
-their sequences. Because 16S in a non protein-coding gene, it evolves
-differently from COI, and the algorithms used to match the 16S sequences to the
-reference database do not take advantage of the protein-coding nature of
-COI. Another approach with bacterial communities, metagenomics, seeks to match
-genomic DNA from environmental samples to sequenced genomes. This approach is
-still not applicable across diverse groups of animals given that genomes are
-larger than in bacteria, and most animal taxa do not have genomes available.
-
-I propose to develop new tools and open-source software to assign taxon names to
-protein-coding DNA sequences generated in metabarcoding studies. I will test the
-performance and accuracy of these tools on simulated datasets, and on
-metabarcoding datasets generated from marine communities. This research is
-interdisciplinary and integrates biodiversity informatics, evolutionary biology,
-ecology, and statistics.
-
-Over the course of this project, I will work on three goals:
-
-- **Goal 1:** develop a web-based tool to manage the heterogeneous but linked
-  data generated in biodiversity surveys.
-- **Goal 2:** improve the assignment of taxonomic information to DNA sequences
-  generated during metabarcoding surveys.
-- **Goal 3:** combine sequence data and taxonomic information to generate
-  community phylogenies based on the sequences obtained from metabarcoding.
-
+This research is interdisciplinary and integrates biodiversity informatics,
+evolutionary biology, ecology, and statistics. The results will help not only to
+characterize and unravel biodiversity, but also to understand how communities
+are assembled, how their members interact, and how the environment affect them.
 
 ![Comparison of workflows for barcoding and metabarcoding. With barcoding (A), tissues from specimens are used to isolate their DNA (gray strand). The barcoding gene (colored dots) is amplified by PCR, and a unique sequence for each specimen is obtained using Sanger sequencing. The sequences obtained can be used to build a reference library, where sequences are associated with a voucher specimen. With metabarcoding (B), DNA from an environmental sample (e.g., sea water containing planktonic larvae) is isolated. This solution contains DNA from multiple species, and the barcoding gene is amplified for the species. An High-Throughput Sequencing (HTS) platform (e.g., Illumina) is used to sequence all the amplified fragments of DNA (the amplicons). These sequences are analyzed bioinformatically: the sequences are matched against a reference database to identify the species contained in the environmental sample.](figures/drawing.pdf)
 
 
 --------------------------------------------------------------------------------
-**Box 1**
-
-**Barcoding and COI** A portion of the cytochrome oxidase I (COI, a
+**Box 1 ---  Barcoding and COI** A portion of the cytochrome oxidase I (COI, a
 mitochondrial gene) has emerged as a universal genetic marker to document
 genetic diversity in animals. For most taxonomic group, COI has low
 intra-specific but high inter-specific variation allowing species delineation
