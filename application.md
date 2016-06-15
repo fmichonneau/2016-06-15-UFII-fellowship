@@ -198,31 +198,45 @@ source, and development will be open to collaboration as it will be hosted on
 GitHub ([https://github.com/fmichonneau](https://github.com/fmichonneau)).
 
 
-### Goal 1 -- a light-weight extensible Laboratory Information Management System for barcoding projects
+### Goal 1 -- an extensible Laboratory Information Management System for barcoding projects
 
-Data collected when assembling a barcoding library are heterogeneous. Need to
-keep track of specimen information, taxonomic information associated with the
-specimen, molecular laboratory work, sequence data, live photography. BOLD is an
-online platform, useful to upload data before publication and to submit data to
-GenBank but researchers need something more lightweight that they can use to
-manage, view, and prepare their data before publishing it/uploading it to BOLD.
+Data collected when assembling a DNA barcoding library are heterogeneous. For
+each specimen included in the library, one must keep track of diverse data and
+artifcats: where the specimen was collected, in which natural history museum it
+is deposited, its taxonomic information, photographs of the specimen, DNA
+extractions, and DNA sequence data. BOLD
+([http://boldsystems.org](http://boldsystems.org)) provides an online platform
+to organize most of this data, and facilitates the direct submission of DNA
+sequences to Genbank. However, there is no software that allows researchers to
+manage, visualize, and prepare their data locally before uploading to BOLD.
 
-There is currently no open-source LIMS designed for barcoding.
+I propose to develop a data management system that will allow researchers to
+easily create, organize, and track all the digital artifacts and their
+identifiers generated when assembling a DNA barcoding library. By facilitating
+the organization of the data, this software will improve the quality of the data
+by ensuring that all the data and artifacts are properly linked.
 
-Developed as an R package (the API), and with a web-application in Shiny from
-the front-end. Because most researchers use some R, they will be able to
-contribute, extend it, and modify it for their own needs. The same API will be
-used to generate the data on the front-end, and for researchers to work with the
-data they can use for their research. It is also easy to deploy. Currently,
-already available as a Docker image. Data stored in a SQLite database and
-simple file system. Easy to backup and manage. Proof of concept of the front-end
-available at
-[http://104.131.113.146/flpk-shiny/](http://104.131.113.146/flpk-shiny/) code
-for the source available at https://github.com/fmichonneau/labmanager and
-https://github.com/fmichonneau/flpk-shiny
+I want this system to be easy to use and manage for non technical users. I will
+develop it as an R package that will provide a programmatic interface to the
+data, and with a companion web-application written using Shiny for the
+front-end. R is widely used by evolutionary biologists and ecologists. By
+developing this data management system in R, researchers will be able to
+contribute to it, and expand it to fit their own needs. The web-based front-end
+will make it easy for non-technical users to explore the data. The data will be
+stored using the Darwin Core standards, and the software will provide
+functionalities to export the data to BOLD.
 
-Data stored according to Darwin Core fields. Easy to export in format required
-by BOLD.
+To make it easy to install, deploy, and backup, the data used by this management
+system will be stored in a SQLite database and a transparent file system. To
+facilitate deployment, I will also maintain a Docker image that will provide all
+the software components needed. I have started the development of a proof of
+concept of this system available at
+[http://104.131.113.146/flpk-shiny/](http://104.131.113.146/flpk-shiny/). The
+code for the source for the R package is available at
+[https://github.com/fmichonneau/labmanager](https://github.com/fmichonneau/labmanager)
+and the front-end at
+[https://github.com/fmichonneau/flpk-shiny](https://github.com/fmichonneau/flpk-shiny).
+
 
 ### Goal 2 -- improving DNA sequence classification for COI metabarcodes
 
