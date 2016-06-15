@@ -383,6 +383,10 @@ campus. Grow community of users who collaborate on solving computing problems.
 
 Collaborations with other fellows
 
+# Timeline
+
+\includegraphics{figures/timetable}
+
 \pagebreak
 
 # References
