@@ -45,28 +45,39 @@ High-Throughput sequencing (HTS) is poised to revolutionize how biodiversity is
 studied. The parellel sequencing of all species found in a community replaces
 the time-consuming steps of isolating and recognizing each species found in an
 environmental sample, and even allows the characterization of communities whose
-members could not be identified based on morphology. The challenge now rests on
-developing informatic tools that can take advantage of publicly available data
-to match these DNA sequences to the organisms they are coming from.
+members could not be identified based on morphology
+[@Kartzinel2015], [@Leray2015], [@Leray2015a]. The challenge now rests on developing
+informatic tools that can take advantage of publicly available data to match
+these DNA sequences to the organisms they are coming from.
+
+<!-- paragraph here about how using phylogenies is going to help understand -->
+<!-- community phylogenetics.. End with something like not only it's going to be -->
+<!-- an useful technology to characterize and discover biodiversity, but also to -->
+<!-- understand how communities are assembled, how their members interact, and -->
+<!-- how the environemnt affects that. -->
+
+
 
 Estimates for the number of species found in the oceans vary by orders of
-magnitude. This uncertainty stems from the difficulty of sampling the diversity
-of habitats hidden under the ocean's surface, and our relative poor taxonomic
-knowledge for most groups. The use of molecular data to study marine
-biodiversity has improved our understanding of how species are distributed in
-space, how they interact, how they are related to each others, and how to
-distinguish them. Since the early 2000's, DNA barcoding has been widely adopted
-by the community to facilitate future identification, and uncover species
-complexes. Almost 5 milions DNA barcodes are publicly available representing
-diverse taxonomic groups, from all latitudes, covering both marine and
-terrestrial habitats. This dataset is the most comprehensive for which the same
-gene has been sequenced and is associated with curated taxonomic information. To
-take advantage of this data, metabarcoding targeting COI is emerging as the
-approach of choice to characterize marine communities based on DNA. However,
-marine biodiversity is still poorly characterized, and many taxa have not yet
-been sequenced for COI. The challenge adressed by this research is to find the
-most likely taxon for a sequence given the species that have been sequenced for
-COI.
+magnitude [@Appeltans2012], [@Costello2013], [@Mora2011a]. This uncertainty
+stems from the difficulty of sampling the diversity of habitats hidden under the
+ocean's surface, and our relative poor taxonomic knowledge for most groups. The
+use of molecular data to study marine biodiversity has improved our
+understanding of how species are distributed in space [@Schroth2002], how they
+interact [@Leray2015a], how they are related to each others [@Dunn2008], and how
+to distinguish them [@Knowlton2000]. Since the early 2000's, DNA barcoding (see
+Figure 1 and Box 1) has been widely adopted by the community to facilitate
+future identification, and uncover species complexes (e.g.,
+[@Michonneau2015-impatiens]). Almost 5 milions DNA barcodes are publicly
+available representing diverse taxonomic groups, from all latitudes, covering
+both marine and terrestrial habitats. This dataset is the most comprehensive for
+which the same gene has been sequenced and is associated with curated taxonomic
+information. To take advantage of this data, metabarcoding (see Figure 1 and Box
+1) targeting COI is emerging as the approach of choice to characterize marine
+communities based on DNA. However, marine biodiversity is still poorly
+characterized, and many taxa have not yet been sequenced for COI. The challenge
+adressed by this proposed research is to find the most likely taxon for a
+sequence given the species that have been sequenced for COI.
 
 <!-- if including community phylogenetic give some background on it -->
 
@@ -76,18 +87,18 @@ COI.
 
 Current software used to assign taxon names to DNA sequences generated with HTS
 are ill-suited for animal communities. These software were originally designed
-to analyze sequences originating from microbial communities. Studies using
-"amplicon sequencing" on bacteria typically target the genetic marker 16S. It is
-known to provide good resolution at low taxonomic scale and is easy to amplify
-across a large diversity of species. Several databases of 16S sequences for
-bacteria have been assembled against which researchers can match their
-sequences. Because 16S in a non protein-coding gene, it evolves differently from
-COI, and the algorithms used to match the 16S sequences to the reference
-database do not take advantage of the protein-coding nature of COI. Another
-approach with bacterial communities, metagenomics, seeks to match genomic DNA
-from environmental samples to sequenced genomes. This approach is still not
-applicable across diverse groups of animals given that genomes are larger than
-in bacteria, and most taxa do not have genomes available.
+to analyze sequences originating from microbial communities
+[@Bazinet2012]. Metabarcoding studies on bacteria typically target the genetic
+marker 16S. It is known to provide good resolution at low taxonomic level and is
+easy to amplify across a large diversity of species. Several databases of 16S
+sequences for bacteria have been assembled against which researchers can match
+their sequences. Because 16S in a non protein-coding gene, it evolves
+differently from COI, and the algorithms used to match the 16S sequences to the
+reference database do not take advantage of the protein-coding nature of
+COI. Another approach with bacterial communities, metagenomics, seeks to match
+genomic DNA from environmental samples to sequenced genomes. This approach is
+still not applicable across diverse groups of animals given that genomes are
+larger than in bacteria, and most animal taxa do not have genomes available.
 
 I propose to develop new informatic tools and open-source software to assign
 taxon names to protein-coding DNA sequences generated in metabarcoding
@@ -106,7 +117,7 @@ Over the course of this project, I will work on three goals:
   community phylogenies based on the sequences obtained from metabarcoding.
 
 
-![Comparison of workflows for barcoding and metabarcoding. With barcoding (A), tissues from specimens are used to isolate their DNA (gray strand). The barcoding gene (colored dots) is amplified by PCR, and an unique sequence for each specimen is obtained using Sanger sequencing. The sequences obtained can be used to build a reference library, where sequences are associated with a voucher specimen. With metabarcoding (B), DNA from an environmental sample (e.g., sea water containing planktonic larvae) is isolated. This solution contains DNA from multiple species, and the barcoding gene is amplified for the species. An High-Throughput Sequencing (HTS) platform (e.g., Illumina) is used to sequence all the amplified fragments of DNA (the amplicons). These sequences are analysed bioinformatically: the sequences are matched against a reference database to identify the species contained in the environmental sample.](figures/drawing.pdf)
+![Comparison of workflows for barcoding and metabarcoding. With barcoding (A), tissues from specimens are used to isolate their DNA (gray strand). The barcoding gene (colored dots) is amplified by PCR, and a unique sequence for each specimen is obtained using Sanger sequencing. The sequences obtained can be used to build a reference library, where sequences are associated with a voucher specimen. With metabarcoding (B), DNA from an environmental sample (e.g., sea water containing planktonic larvae) is isolated. This solution contains DNA from multiple species, and the barcoding gene is amplified for the species. An High-Throughput Sequencing (HTS) platform (e.g., Illumina) is used to sequence all the amplified fragments of DNA (the amplicons). These sequences are analysed bioinformatically: the sequences are matched against a reference database to identify the species contained in the environmental sample.](figures/drawing.pdf)
 
 
 --------------------------------------------------------------------------------
@@ -208,8 +219,9 @@ used to generate the data on the front-end, and for researchers to work with the
 data they can use for their research. It is also easy to deploy. Currently,
 already available as a Docker image. Data storred in a SQLite database and
 simple file system. Easy to backup and manage. Proof of concept of the front-end
-avaialble at http://104.131.113.146/flpk-shiny/ code for the source available at
-https://github.com/fmichonneau/labmanager and
+avaialble at
+[http://104.131.113.146/flpk-shiny/](http://104.131.113.146/flpk-shiny/) code
+for the source available at https://github.com/fmichonneau/labmanager and
 https://github.com/fmichonneau/flpk-shiny
 
 Data stored according to Darwin Core fields. Easy to export in format required
