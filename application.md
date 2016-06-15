@@ -375,15 +375,26 @@ coding genes for barcoding (e.g., plants).
 
 
 
-# Timeline
+# Broader Impacts
 
-# Training and Broader Impacts
+*Scientific community outreach ---* This project will make available software
+and data that will be open and ready to use for the research community. All the
+software will be well documented and include tutorials to guide first time
+users. Additionally, I will also sollicit iDigBio's (https://idigbio.org)
+support to organize a workshop aimed at defining best archival practices and the
+type of metadata that should be associated with environmental samples.
 
-Organize Data Carpentry/Software Carpentry workshop on campus. Increase
-computational litteracy on campus, increase use of computing resources on
-campus. Grow community of users who collaborate on solving computing problems.
+**Pedagogical outreach ---* I will teach workshops that demonstrate how to use
+the software developed over the course of this project. As a certified Data
+Carpentry and Software Carpentry instructors (see Biosketch), I will help
+organize such workshops on campus. These provide a venue to increase
+computational literacy on campus, advertise available resources, and ultimately
+grow the community of users who collaborate on solving computing problems.
 
-Collaborations with other fellows
+**Public and K-12 outreach ---* Marine organisms provide unique opportunities to
+teach about adaptations and spark the sense of wonder for the natural world. I
+plan to use my research to develop existing and new learning activities for
+high-school students and for the general public.
 
 # Timeline
 
