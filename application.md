@@ -42,21 +42,19 @@ Bioscience. [joseph.ryan@whitney.ufl.edu](mailto:joseph.ryan@whitney.ufl.edu)
 # Introduction
 
 High-Throughput sequencing (HTS) is poised to revolutionize how biodiversity is
-studied. The parellel sequencing of all species found in a community replaces
+studied. The parallel sequencing of all species found in a community replaces
 the time-consuming steps of isolating and recognizing each species found in an
 environmental sample, and even allows the characterization of communities whose
-members could not be identified based on morphology
-[@Kartzinel2015], [@Leray2015], [@Leray2015a]. The challenge now rests on developing
-informatic tools that can take advantage of publicly available data to match
-these DNA sequences to the organisms they are coming from.
+members could not be identified based on morphology [@Kartzinel2015],
+[@Leray2015], [@Leray2015a]. The challenge now rests on developing computing
+tools that can take advantage of publicly available data to match these DNA
+sequences to the organisms they are coming from.
 
 <!-- paragraph here about how using phylogenies is going to help understand -->
 <!-- community phylogenetics.. End with something like not only it's going to be -->
 <!-- an useful technology to characterize and discover biodiversity, but also to -->
 <!-- understand how communities are assembled, how their members interact, and -->
-<!-- how the environemnt affects that. -->
-
-
+<!-- how the environment affects that. -->
 
 Estimates for the number of species found in the oceans vary by orders of
 magnitude [@Appeltans2012], [@Costello2013], [@Mora2011a]. This uncertainty
@@ -68,7 +66,7 @@ interact [@Leray2015a], how they are related to each others [@Dunn2008], and how
 to distinguish them [@Knowlton2000]. Since the early 2000's, DNA barcoding (see
 Figure 1 and Box 1) has been widely adopted by the community to facilitate
 future identification, and uncover species complexes (e.g.,
-[@Michonneau2015-impatiens]). Almost 5 milions DNA barcodes are publicly
+[@Michonneau2015-impatiens]). Almost 5 million DNA barcodes are publicly
 available representing diverse taxonomic groups, from all latitudes, covering
 both marine and terrestrial habitats. This dataset is the most comprehensive for
 which the same gene has been sequenced and is associated with curated taxonomic
@@ -76,7 +74,7 @@ information. To take advantage of this data, metabarcoding (see Figure 1 and Box
 1) targeting COI is emerging as the approach of choice to characterize marine
 communities based on DNA. However, marine biodiversity is still poorly
 characterized, and many taxa have not yet been sequenced for COI. The challenge
-adressed by this proposed research is to find the most likely taxon for a
+addressed by this proposed research is to find the most likely taxon for a
 sequence given the species that have been sequenced for COI.
 
 <!-- if including community phylogenetic give some background on it -->
@@ -100,12 +98,12 @@ genomic DNA from environmental samples to sequenced genomes. This approach is
 still not applicable across diverse groups of animals given that genomes are
 larger than in bacteria, and most animal taxa do not have genomes available.
 
-I propose to develop new informatic tools and open-source software to assign
-taxon names to protein-coding DNA sequences generated in metabarcoding
-studies. I will test the performance and accuracy of these tools on simulated
-datasets, and on metabarcoding datasets generated from marine communities. This
-research is interdisciplinary and integrates biodiversity informatics,
-evolutionary biology, ecology, and statistics.
+I propose to develop new tools and open-source software to assign taxon names to
+protein-coding DNA sequences generated in metabarcoding studies. I will test the
+performance and accuracy of these tools on simulated datasets, and on
+metabarcoding datasets generated from marine communities. This research is
+interdisciplinary and integrates biodiversity informatics, evolutionary biology,
+ecology, and statistics.
 
 Over the course of this project, I will work on three goals:
 
@@ -117,7 +115,7 @@ Over the course of this project, I will work on three goals:
   community phylogenies based on the sequences obtained from metabarcoding.
 
 
-![Comparison of workflows for barcoding and metabarcoding. With barcoding (A), tissues from specimens are used to isolate their DNA (gray strand). The barcoding gene (colored dots) is amplified by PCR, and a unique sequence for each specimen is obtained using Sanger sequencing. The sequences obtained can be used to build a reference library, where sequences are associated with a voucher specimen. With metabarcoding (B), DNA from an environmental sample (e.g., sea water containing planktonic larvae) is isolated. This solution contains DNA from multiple species, and the barcoding gene is amplified for the species. An High-Throughput Sequencing (HTS) platform (e.g., Illumina) is used to sequence all the amplified fragments of DNA (the amplicons). These sequences are analysed bioinformatically: the sequences are matched against a reference database to identify the species contained in the environmental sample.](figures/drawing.pdf)
+![Comparison of workflows for barcoding and metabarcoding. With barcoding (A), tissues from specimens are used to isolate their DNA (gray strand). The barcoding gene (colored dots) is amplified by PCR, and a unique sequence for each specimen is obtained using Sanger sequencing. The sequences obtained can be used to build a reference library, where sequences are associated with a voucher specimen. With metabarcoding (B), DNA from an environmental sample (e.g., sea water containing planktonic larvae) is isolated. This solution contains DNA from multiple species, and the barcoding gene is amplified for the species. An High-Throughput Sequencing (HTS) platform (e.g., Illumina) is used to sequence all the amplified fragments of DNA (the amplicons). These sequences are analyzed bioinformatically: the sequences are matched against a reference database to identify the species contained in the environmental sample.](figures/drawing.pdf)
 
 
 --------------------------------------------------------------------------------
@@ -143,7 +141,7 @@ metamorphose into? or what is the adult stage of this larva found in the
 plankton?)
 
 Among closely related species, COI sequences mostly vary at the third codon
-position. Because of the redundance of the genetic code, mutations on the third
+position. Because of the redundancy of the genetic code, mutations on the third
 codon affect less often the protein sequence than mutations at the other two
 codons. Among more distantly related taxa, this excess of mutations on the third
 codon may lead to convergent mutations. This leads algorithms based on sequence
@@ -159,7 +157,7 @@ more accurate to infer the higher taxonomy from the sequence.
 # Research questions
 
 Global and local threats (e.g., ocean acidification, increased temperatures,
-pollution, overfishing) require better characterization and monitoring of marine
+pollution, over-fishing) require better characterization and monitoring of marine
 communities, so we can evaluate and understand their impact on biodiversity and
 on how communities are assembled. Metabarcoding makes it possible to estimate
 the number of species occurring in the plankton, in the gut of fish (to infer
@@ -170,7 +168,7 @@ fragments (e.g., a shrimp leg in a fish gut).
 
 Metabarcoding is still a new technology whose limitations need to be better
 defined, but its potential to help us understand not only how many species are
-found in a given community, but also identity the species will imporove our
+found in a given community, but also identity the species will improve our
 understanding on how these communities are assembled, and in turn gain insights
 into basic information on the natural history of taxa for which no data
 currently exist. <!-- give examples: are closely related taxa reproduce at the -->
@@ -195,20 +193,19 @@ communities changes through the year.
 
 To answer these questions, I will need to generate phylogenies representative of
 the communities. These phylogenies will be generated based on the output of the
-softwares developed in Goals 1 & 2. The source code will be open source, and
-development will be open to collaboration as it will be hosted on GitHub
-(https://github.com).
+software developed in Goals 1 & 2. The code used by the software will be open
+source, and development will be open to collaboration as it will be hosted on
+GitHub ([https://github.com/fmichonneau](https://github.com/fmichonneau)).
 
 
 ### Goal 1 -- a light-weight extensible Laboratory Information Management System for barcoding projects
 
-Data collected when assembling a barcoding library are heterogenous in
-nature. Need to keep track of specimen information, taxonomic information
-associated with the specimen, molecular laboratory work, sequence data, live
-photography. BOLD is an online platform, useful to upload data before
-publication and to submit data to genbank but researchers need something more
-lightweight that they can use to manage, view, and prepare their data before
-publishing it/uploading it to BOLD.
+Data collected when assembling a barcoding library are heterogeneous. Need to
+keep track of specimen information, taxonomic information associated with the
+specimen, molecular laboratory work, sequence data, live photography. BOLD is an
+online platform, useful to upload data before publication and to submit data to
+GenBank but researchers need something more lightweight that they can use to
+manage, view, and prepare their data before publishing it/uploading it to BOLD.
 
 There is currently no open-source LIMS designed for barcoding.
 
@@ -217,9 +214,9 @@ the front-end. Because most researchers use some R, they will be able to
 contribute, extend it, and modify it for their own needs. The same API will be
 used to generate the data on the front-end, and for researchers to work with the
 data they can use for their research. It is also easy to deploy. Currently,
-already available as a Docker image. Data storred in a SQLite database and
+already available as a Docker image. Data stored in a SQLite database and
 simple file system. Easy to backup and manage. Proof of concept of the front-end
-avaialble at
+available at
 [http://104.131.113.146/flpk-shiny/](http://104.131.113.146/flpk-shiny/) code
 for the source available at https://github.com/fmichonneau/labmanager and
 https://github.com/fmichonneau/flpk-shiny
@@ -273,11 +270,11 @@ To test the accuracy of this approach, I will use sequences from known species
 and use the software developed to attempt to identify them. To simulate the
 effect of trying to identify a species not represented in the reference
 database, I will ignore all the hits for this particular species and use the
-next best matches. I will repeat this operation at increasingly higher taxonmic
+next best matches. I will repeat this operation at increasingly higher taxonomic
 levels (removing the genus, the family, the class, the order) to determine how
 the software behaves when the sequence to be classified is taxonomically further
 away from taxa available in the reference database. Because the results are
-likely dependent on how many representants of the group are included in the
+likely dependent on how many representatives of the group are included in the
 reference database, the test dataset will be assembled to include representative
 from diverse taxa.
 
@@ -301,7 +298,7 @@ will account for the presence of these alternative genetic codes.
 A recent exciting research development in ecology is the realization that
 understanding how closely related species that are interacting in a community
 can shed light on the ecological processes at play. For instance, if species
-occuring in a given environment are more closely related than would be expected
+occurring in a given environment are more closely related than would be expected
 by chance, it can be hypothesized that characteristics of the environment select
 for a trait that these species have (ecological filtering). On the other hand,
 if species are more spaced out in the phylogeny than one would expect by chance,
@@ -325,10 +322,10 @@ reconstruction of relationships among more distantly related species.
 
 I propose to combine information from the Open Tree of Life project and the COI
 data obtained through metabarcoding to estimate the phylogeny of species
-included in the metabarcoded communities. To do so, I will use the taxon
+included in the meta-barcoded communities. To do so, I will use the taxon
 assignments inferred from the COI sequences (using software from goal 2) to
 retrieve the topology for these species from the Open Tree of Life. This
-topology will be used as a contraint when estimating the phylogeny from the COI
+topology will be used as a constraint when estimating the phylogeny from the COI
 data. To validate the accuracy of this approach, I will compare phylogenies
 generated by this method with published phylogenies reconstructed solely on
 multi-gene DNA alignments.
