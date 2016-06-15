@@ -391,6 +391,20 @@ Collaborations with other fellows
 
 \pagebreak
 
+
+
+# Project Budget
+
+A budget of $50,568 is requested. This include a year of salary for the
+postdoctoral associate ($42,000) with a 20.4% fringe benefit rate as listed
+here: http://research.ufl.edu/faculty-and-staff/proposal-development-submission/budgeting-information/budget-preparation-information.html
+
+This will fund year 1 of the research proposed here. The PI (Mark Martindale)
+will provide salary for year 2 (see department coversheet, and letter of support
+included in Appendix 2).
+
+\pagebreak
+
 # References
 
 <!-- First, the sequences get translated according to the candidate codon -->
