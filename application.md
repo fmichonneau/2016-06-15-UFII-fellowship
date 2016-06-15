@@ -1,7 +1,7 @@
 ---
 author:
 title:
-geometry: margin=.5in
+geometry: margin=.6in
 papersize: letter
 indent: true
 documentclass: article
@@ -11,15 +11,19 @@ mainfontoptions: Ligatures=TeX,Scale=1.1
 
 # Cover Sheet
 
+\vspace{2cm}
+
 ## Title: Improving DNA sequence classification for metabarcoding of animal communities
 
-
+\vspace{1cm}
 
 ## List of personel
 
-* **Post-Doctoral Associate:** François Michonneau, Whitney Laboratory for Marine
-Bioscience. [francois.michonneau@whitney.ufl.edu](mailto:francois.michonneau@whitney.ufl.edu)
+\vspace{.5cm}
 
+* **Post-Doctoral Associate:** François Michonneau, Whitney Laboratory for Marine
+Bioscience.
+[francois.michonneau@whitney.ufl.edu](mailto:francois.michonneau@whitney.ufl.edu)
 
 * **PI:** Mark Martindale, Whitney Laboratory for Marine Bioscience. [mqmartin@whitney.ufl.edu](mailto:mqmartin@whitney.ufl.edu)
 
